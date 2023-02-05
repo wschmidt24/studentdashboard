@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Dashboard</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/e/e5/Nebraska_Cornhuskers_logo.svg">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <img height="100" width="100" src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Nebraska_Cornhuskers_logo.svg"/>
+    <h1>Current Grades</h1>
+    {% for i in classes %}
+        <p>{{ i }}<span style="float: right">{{ grades[i] }}</span></p>
+    {% endfor %}
+    <h1>To Do List</h1>
+    {% for i in to_do %}
+        <p>{{ i[0][1] }} {{ i[0][0] }} <span style="float: right">Due: {{ i[1][1] }} ({{ i[1][0] }}s)</span></p>
+    {% endfor %}
+    <h1>MyRed</h1>
+    <p>Account balance: ${{ account_balance }}</p>
+    <p>Due Now: ${{ due_now }}</p>
+    <p>Meal Swipes: {{ meal_swipes_period }}</p>
+    <p>Dining Dollars: ${{ dining_dollars }}</p>
+    <p>Per Day: ${{ per_day }}</p>
+    <p>Herbies Gift Card Balance: ${{ herbies_gc_balance }}</p>
+</body>
+</html>

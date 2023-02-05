@@ -1,0 +1,41 @@
+body {
+    background-color: #4c4c4d;
+    color: #f5f1e7;
+    padding: 20px;
+}
+
+h1 {
+    font-family: Futura;
+    padding-top: 20px;
+}
+
+p {
+    font-family: "Andale Mono";
+}
+
+#sign_in {
+    text-align: center;
+    font-size: 50px;
+}
+
+#sign_in_image {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.login {
+        display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+    max-width: 300px;
+}
+
+button {
+            display: block;
+
+    margin-left: auto;
+  margin-right: auto;
+}
